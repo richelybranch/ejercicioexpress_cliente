@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Servicios Web"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView">
+
+        <Button android:id="@+id/btnRichely" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Richely"/>
+        <Button android:id="@+id/btnNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nombre"/>
+        <Button android:id="@+id/btnSuma" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Suma Fija"/>
+        <Button android:id="@+id/btnSumaParam" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Suma con Parámetro"/>
+        <Button android:id="@+id/btnCuadrado" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Cuadrado"/>
+        <Button android:id="@+id/btnRectangulo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rectángulo"/>
+        <Button android:id="@+id/btnRombo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rombo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonLayout">
+
+        <EditText android:id="@+id/input1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Input 1"/>
+        <EditText android:id="@+id/input2" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Input 2"/>
+        <EditText android:id="@+id/input3" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Input 3"/>
+        <Button android:id="@+id/btnCalculate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Calcular"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
